@@ -1,0 +1,58 @@
+# Settings under "global" pertain to all components 
+# of the Consul installation.
+global:
+    # The name of your installation. This should always # be set to consul.
+    name: consul
+    # Enable metrics so you can observe what's happening # in your installation.
+    metrics: 
+        enabled: true
+    # Consul image.
+    image: hashicorp/consul:latest
+    # Envoy image.
+    imageEnvoy: envoyproxy/envoy:latest
+    # Settings under "server" configure Consul servers.
+server:
+    # replicas sets the number of servers.
+    # In production, this should be 3 or 5, however
+        # for testing, this should be set to 1.
+    replicas: 3
+# Enable Consul's service mesh functionality.
+connectInject: 
+    enabled: true
+# Settings under "controller" configure Consul's controller # that manages custom resources.
+# Custom resources are covered in later chapters. 
+controller:
+    enabled: true
+# Install Prometheus, a metrics database.
+prometheus: 
+    enabled: true
+# Settings under "ui" configure the Consul UI.
+ui: 
+    service:
+    # Use a load balancer service in
+    # front of the Consul UI so we can access it using # minikube tunnel.
+    type: LoadBalancer
+    # Use port 8500 for the UI.
+    port:
+        http: 8500
+# IngressGateway config
+ingressGateways:
+# Enable ingress gateways. 
+    enabled: true
+    defaults:
+        # Since there is only one node in minikube,
+        # set affinity to null so during an upgrade
+        # two ingress gateway pods can run on the
+        # same node.
+        affinity: null
+gateways:
+    - name: ingress-gateway
+      service:
+      # Set the service type to LoadBalancer so
+      # that you can access it through minikube tunnel. 
+        type: CLusterIP
+      # Access the gateway on port 8080.
+        ports:
+            - port: 8080
+        # In production scenarios you should run multiple # replicas for redundancy.
+      replicas: 1

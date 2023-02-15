@@ -5,14 +5,10 @@ metadata:
   labels:
     app: frontend 
 spec:
-  type: LoadBalancer 
+  type: ClusterIP 
   selector:
     app: frontend 
   ports:
     - protocol: TCP 
       port: 6060 
       targetPort: 6060
-  externalIPs:
-    - 129.226.216.230
-    - 43.156.118.232
-    - 43.156.122.2

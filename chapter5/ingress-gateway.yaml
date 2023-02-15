@@ -1,0 +1,10 @@
+apiVersion: consul.hashicorp.com/v1alpha1
+kind: IngressGateway
+metadata:
+  name: my-gateway
+spec:
+  listeners: []
+    # - port: <external service port>
+    #   protocol: <protocol used by external service>
+    #   services:
+    #     - name: <name of external service>

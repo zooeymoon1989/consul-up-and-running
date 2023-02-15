@@ -5,4 +5,4 @@ metadata:
   namespace: consul
 spec:
   config:
-    protocal: http
+    protocol: http

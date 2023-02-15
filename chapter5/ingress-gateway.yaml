@@ -5,13 +5,8 @@ metadata:
   namespace: consul
 spec:
   listeners: 
-    - port: 8080
+    - port: 30310
       protocol: http
       services:
         - name: frontend
           hosts: ["liwenqiang.site","localhost","127.0.0.1"]
-    - port: 18080
-      protocol: http
-      services:
-        - name: simple-golang
-          hosts: ["liwenqiang.site","localhost","172.22.30.1"]

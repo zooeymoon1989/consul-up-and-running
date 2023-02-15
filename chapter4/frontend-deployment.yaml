@@ -15,7 +15,6 @@ spec:
         app: frontend 
       annotations:
          consul.hashicorp.com/connect-inject: "true"
-         consul.hashicorp.com/service-meta-version: "v1"
     spec: 
       containers:
         - name: frontend

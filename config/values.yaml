@@ -45,14 +45,14 @@ ingressGateways:
         # two ingress gateway pods can run on the
         # same node.
         affinity: null
-gateways:
-    - name: ingress-gateway
-      service:
-      # Set the service type to LoadBalancer so
-      # that you can access it through minikube tunnel. 
-        type: ClusterIP
-      # Access the gateway on port 8080.
-        ports:
+    gateways:
+      - name: ingress-gateway
+        service:
+        # Set the service type to LoadBalancer so
+        # that you can access it through minikube tunnel. 
+          type: ClusterIP
+          # Access the gateway on port 8080.
+          ports:
             - port: 8080
-        # In production scenarios you should run multiple # replicas for redundancy.
-      replicas: 1
+          # In production scenarios you should run multiple # replicas for redundancy.
+        replicas: 1

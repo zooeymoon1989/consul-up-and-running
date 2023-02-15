@@ -31,10 +31,10 @@ ui:
     service:
     # Use a load balancer service in
     # front of the Consul UI so we can access it using # minikube tunnel.
-    type: LoadBalancer
-    # Use port 8500 for the UI.
-    port:
-        http: 8500
+        type: CLusterIP
+        # Use port 8500 for the UI.
+        port:
+            http: 8500
 # IngressGateway config
 ingressGateways:
 # Enable ingress gateways. 

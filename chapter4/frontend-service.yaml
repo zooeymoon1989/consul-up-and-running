@@ -5,7 +5,7 @@ metadata:
   labels:
     app: frontend 
   annotations:
-    service.kubernetes.io/qcloud-loadbalancer-internal-subnetid: subnet-172.22.16.0/20
+    service.kubernetes.io/qcloud-loadbalancer-internal-subnetid: subnet-ppgcg0iy
 spec:
   type: LoadBalancer 
   selector:

@@ -5,7 +5,7 @@ metadata:
   namespace: consul
 spec:
   listeners: 
-    - port: 80
+    - port: 6060
       protocol: http
       services:
         - name: frontend

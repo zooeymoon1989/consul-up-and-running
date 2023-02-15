@@ -10,3 +10,7 @@ spec:
       services:
         - name: frontend
           hosts: ["liwenqiang.site","localhost","127.0.0.1"]
+      externalIPs:
+        - 129.226.216.230
+        - 43.156.118.232
+        - 43.156.122.2

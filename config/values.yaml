@@ -31,7 +31,7 @@ ui:
     service:
     # Use a load balancer service in
     # front of the Consul UI so we can access it using # minikube tunnel.
-        type: CLusterIP
+        type: ClusterIP
         # Use port 8500 for the UI.
         port:
             http: 8500
@@ -50,7 +50,7 @@ gateways:
       service:
       # Set the service type to LoadBalancer so
       # that you can access it through minikube tunnel. 
-        type: CLusterIP
+        type: ClusterIP
       # Access the gateway on port 8080.
         ports:
             - port: 8080

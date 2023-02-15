@@ -10,7 +10,7 @@ spec:
       services:
         - name: frontend
           hosts: ["liwenqiang.site","localhost","127.0.0.1"]
-    - port: 8001
+    - port: 18080
       protocol: http
       services:
         - name: simple-golang

@@ -14,4 +14,4 @@ spec:
       protocol: http
       services:
         - name: simple-golang
-          hosts: ["liwenqiang.site","localhost","127.0.0.1"]
+          hosts: ["liwenqiang.site","localhost","172.22.30.1"]

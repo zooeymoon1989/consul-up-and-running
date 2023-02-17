@@ -9,3 +9,10 @@ spec:
   sources:
     - name: "ingress-gateway"
       action: allow
+      permissions:
+        - http:
+            pathPrefix: /admin
+          action: deny
+        - http:
+            pathPrefix: /
+          action: allow

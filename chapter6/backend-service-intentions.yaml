@@ -5,7 +5,7 @@ metadata:
   namespace: consul 
 spec:
   destination:
-    name: "backend"
+    name: backend
   sources:
-    - name: "frontend"
+    - name: frontend
       action: allow

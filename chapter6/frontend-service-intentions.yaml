@@ -2,7 +2,6 @@ apiVersion: consul.hashicorp.com/v1alpha1
 kind: ServiceIntentions
 metadata:
   name: frontend
-  namespace: consul 
 spec:
   destination:
     name: "frontend"

@@ -5,7 +5,7 @@ metadata:
   namespace: consul
 spec:
   listeners: 
-    - port: 30310
+    - port: 8080
       protocol: http
       services:
         - name: frontend

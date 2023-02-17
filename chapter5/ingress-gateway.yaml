@@ -9,4 +9,4 @@ spec:
       protocol: http
       services:
         - name: frontend
-          hosts: ["liwenqiang.site","localhost","127.0.0.1"]
+          hosts: ["consul.liwenqiang.site"]

@@ -36,7 +36,7 @@ ui:
         port:
             http: 8500
     dashboardURLTemplates:
-        service: "https://localhost:3000/d/R1aLALJVz/services?orgId=1&var-Service={{Service.Name}}"
+        service: "https://www.liwenqiang.site/:3000/d/R1aLALJVz/services?orgId=1&var-Service={{Service.Name}}"
 # IngressGateway config
 ingressGateways:
 # Enable ingress gateways. 

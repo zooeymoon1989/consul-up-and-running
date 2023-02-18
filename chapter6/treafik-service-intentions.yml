@@ -1,0 +1,10 @@
+apiVersion: consul.hashicorp.com/v1alpha1 
+kind: ServiceIntentions
+metadata:
+  name: traefik-ui
+spec:
+  destination:
+    name: traefik
+  sources:
+    - name: ingress-gateway
+      action: allow

@@ -5,14 +5,13 @@ metadata:
   namespace: consul
 spec:
   listeners: 
-    - port: 8080
+    - port: 80
       protocol: http
       services:
         - name: frontend
           hosts: ["birdwatch.liwenqiang.site"]
-    - port: 8500
+    - port: 8080
       protocol: http
       services:
-        - name: consul-ui
-          namespace: consul
-          hosts: ["consul.liwenqiang.site"]
+        - name: ctraefik
+          hosts: ["traefik.liwenqiang.site"]

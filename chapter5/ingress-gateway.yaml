@@ -10,8 +10,3 @@ spec:
       services:
         - name: frontend
           hosts: ["birdwatch.liwenqiang.site"]
-    - port: 8080
-      protocol: http
-      services:
-        - name: traefik
-          hosts: ["traefik.liwenqiang.site"]

@@ -9,4 +9,9 @@ spec:
       protocol: http
       services:
         - name: frontend
+          hosts: ["birdwatch.liwenqiang.site"]
+    - port: 8500
+      protocol: http
+      services:
+        - name: frontend
           hosts: ["consul.liwenqiang.site"]

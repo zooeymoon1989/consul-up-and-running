@@ -53,6 +53,6 @@ ingressGateways:
           type: ClusterIP
           # Access the gateway on port 8080.
           ports:
-            - port: 8080
+            - port: 80
           # In production scenarios you should run multiple # replicas for redundancy.
         replicas: 1

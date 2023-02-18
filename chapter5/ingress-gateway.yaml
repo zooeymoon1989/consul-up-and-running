@@ -13,5 +13,5 @@ spec:
     - port: 8500
       protocol: http
       services:
-        - name: frontend
+        - name: consul-ui
           hosts: ["consul.liwenqiang.site"]

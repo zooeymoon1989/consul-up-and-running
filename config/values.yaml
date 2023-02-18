@@ -56,14 +56,3 @@ ingressGateways:
             - port: 8080
           # In production scenarios you should run multiple # replicas for redundancy.
         replicas: 1
-
-      - name: ingress-gateway-2
-        service:
-        # Set the service type to LoadBalancer so
-        # that you can access it through minikube tunnel. 
-          type: ClusterIP
-          # Access the gateway on port 8080.
-          ports:
-            - port: 80
-          # In production scenarios you should run multiple # replicas for redundancy.
-        replicas: 1

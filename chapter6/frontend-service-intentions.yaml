@@ -14,11 +14,3 @@ spec:
         - http:
             pathPrefix: /
           action: allow
-    - name: ingress-gateway-2
-      permissions:
-        - http:
-            pathPrefix: /admin
-          action: deny
-        - http:
-            pathPrefix: /
-          action: allow

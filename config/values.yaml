@@ -39,12 +39,12 @@ ui:
 ingressGateways:
 # Enable ingress gateways. 
     enabled: true
-    defaults:
+    # defaults:
         # Since there is only one node in minikube,
         # set affinity to null so during an upgrade
         # two ingress gateway pods can run on the
         # same node.
-        affinity: null
+        # affinity: null
     gateways:
       - name: ingress-gateway
         service:
@@ -53,6 +53,6 @@ ingressGateways:
           type: ClusterIP
           # Access the gateway on port 8080.
           ports:
-            - port: 80
+            - port: 8080
           # In production scenarios you should run multiple # replicas for redundancy.
         replicas: 1

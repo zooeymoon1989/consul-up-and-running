@@ -8,3 +8,5 @@ spec:
   sources:
     - name: ingress-gateway
       action: allow
+    - name: ingress-gateway-2
+      action: allow

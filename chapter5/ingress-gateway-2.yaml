@@ -1,0 +1,12 @@
+apiVersion: consul.hashicorp.com/v1alpha1
+kind: IngressGateway
+metadata:
+  name: ingress-gateway-2
+  namespace: consul
+spec:
+  listeners: 
+    - port: 80
+      protocol: http
+      services:
+        - name: frontend
+          hosts: ["birdwatch.liwenqiang.site"]

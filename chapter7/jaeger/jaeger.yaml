@@ -6,4 +6,4 @@ spec:
   query:
     serviceType: ClusterIP
   ingress:
-    enable: false
+    enabled: false

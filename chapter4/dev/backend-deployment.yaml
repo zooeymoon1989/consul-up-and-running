@@ -27,3 +27,7 @@ spec:
               value: "http://172.22.16.8:9411"
           ports:
           - containerPort: 7000
+          readinessProbe:
+            port: 9999
+            path: /healthz
+          periodSeconds: 5

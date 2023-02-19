@@ -16,3 +16,8 @@ spec:
         serviceSubset: v2
     # - destination:
     #     serviceSubset: v2
+    # - match:
+    #     http:
+    #       pathPrefix: /bird
+    #   destination:
+    #     serviceSubset: /birds

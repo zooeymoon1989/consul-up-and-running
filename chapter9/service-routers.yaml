@@ -6,10 +6,13 @@ spec:
   routes:
     - match:
         http:
-          header:
-            - name: X-Version
-              exact: v2
+          queryParam:
+            - name: canary
+              exact: "true"
+          # header:
+          #   - name: X-Version
+          #     exact: v2
       destination:
         serviceSubset: v2
-    - destination:
-        serviceSubset: v2
+    # - destination:
+    #     serviceSubset: v2

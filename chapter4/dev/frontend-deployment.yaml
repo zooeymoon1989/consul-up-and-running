@@ -24,5 +24,7 @@ spec:
               value: "0.0.0.0:6060"
             - name: BACKEND_URL 
               value: "http://backend"
+            - name: TRACING_URL
+              value: "http://172.22.16.8:9411"
           ports:
           - containerPort: 6060

@@ -10,13 +10,13 @@ spec:
       services:
         - name: frontend
           hosts: ["birdwatch.liwenqiang.site"]
-    - port: 8080
-      protocol: http
-      services:
-        - name: hello-svc
-          hosts: ["hello-svc.liwenqiang.site"]
-    - port: 3000
-      protocol: http
-      services:
-        - name: grafana
-          hosts: ["grafana.liwenqiang.site"]
+    # - port: 8080
+    #   protocol: http
+    #   services:
+    #     - name: hello-svc
+    #       hosts: ["hello-svc.liwenqiang.site"]
+    # - port: 3000
+    #   protocol: http
+    #   services:
+    #     - name: grafana
+    #       hosts: ["grafana.liwenqiang.site"]
